@@ -22,7 +22,7 @@ class LaplaceEquationSolver:
 
     def solve(self, constant_voltage: ScalarField) -> ScalarField:
         """
-        Solve the Biot–Savart equation to compute the magnetic field given an electric current field.
+        Solve the Laplace equation to compute the potential field given a constant voltage field.
 
         Parameters
         ----------
