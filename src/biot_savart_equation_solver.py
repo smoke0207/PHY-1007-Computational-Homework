@@ -2,7 +2,7 @@ from re import I
 import numpy as np
 from scipy.constants import mu_0, pi
 
-from fields import VectorField
+from src.fields import VectorField
 
 
 class BiotSavartEquationSolver:
