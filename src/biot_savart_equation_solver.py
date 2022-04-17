@@ -1,7 +1,8 @@
+from re import I
 import numpy as np
 from scipy.constants import mu_0, pi
 
-from src.fields import VectorField
+from fields import VectorField
 
 
 class BiotSavartEquationSolver:
@@ -28,4 +29,7 @@ class BiotSavartEquationSolver:
             B_z(x, y) are the 3 components of the magnetic vector at a given point (x, y) in space. Note that
             B_x = B_y = 0 is always True in our 2D world.
         """
+        I = electric_current[i,j]
+        
+        return  (mu_0/4*pi)
         raise NotImplementedError
